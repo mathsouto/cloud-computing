@@ -53,12 +53,6 @@ header.sticky {
     margin: 0 auto;
 }
 
-.logo {
-    font-size: clamp(10px, 5vw, 17px);
-    color: var(--white);
-    text-decoration: none;
-}
-
 .menu {
     display: flex;
     list-style: none;
