@@ -331,7 +331,7 @@ header.sticky {
     width: 65%;
     display: flex;
     justify-content: space-between;
-    margin: 15% auto;
+    margin: 10% auto;
     gap: 20px;
 }
 
@@ -354,7 +354,6 @@ header.sticky {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
     width: 100%;
     /* max-width: 600px; */
     /* min-width: 150px; */
@@ -362,13 +361,20 @@ header.sticky {
     /* min-width: 336px; */
     aspect-ratio: 16 / 9; /* Proporção 16:9 */
 }
- 
-.rightText p {
+
+.rightTexts h1 {
     color: var(--orange);
-    font-size: clamp(20px, 5vw, 35px);
-    font-weight: 300;
+    font-size: clamp(15px, 5vw, 25px);
+    font-weight: 500;
     text-align: center;
-    padding-top: 50%;
+}
+
+.rightTexts p {
+    max-width: 100%;
+    color: white;
+    margin: 5px 0 0 0;
+    font-weight: 300;
+    font-size: clamp(6px, 5vw, 14px);
 }
 
 .rightTopics {
@@ -381,16 +387,13 @@ header.sticky {
 .topics {
     background-color: var(--gray-light2);
     border-radius: 7px;
-    cursor: pointer;
-
+    /* cursor: pointer; */
     display: flex;
     align-items: center;
     justify-content: center;
-
     height: 100%;
-    min-height: 80px;
+    min-height: 79px;
     width: 100%;
-
     box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
@@ -529,11 +532,13 @@ screen and (max-height: 450px) {
     .contentFour {
         flex-direction: column;
         align-items: center;
-        gap: 80px;
+        gap: 15vh;
+        margin: 25% auto;
     }
 
     .rightBox {
         justify-content: center;
+        gap: 20px;
     }
 }
 
@@ -571,11 +576,11 @@ screen and (max-height: 450px) {
         width: 75%;
     }
 
-    .contentFour {
+    .line {
         width: 75%;
     }
 
-    .line {
+    .contentFour {
         width: 75%;
     }
 }
