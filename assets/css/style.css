@@ -32,7 +32,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    padding: 30px 0;
+    padding: 15px 0;
     z-index: 10;
     transition: all ease-in-out 0.2s;
     /* background-color: red; */
@@ -41,7 +41,7 @@ header {
 header.sticky {
     background-color: var(--gray-light);
     position: fixed;
-    padding: 20px 0;
+    padding: 10px 0;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 20px 20px -20px;
     z-index: 10;
 }
@@ -589,11 +589,11 @@ screen and (max-height: 450px) {
 @media only screen and (max-width: 768px),
 screen and (max-height: 450px) {
     header {
-        padding: 25px 0;
+        padding: 10px 0;
     }
 
     header.sticky {
-        padding: 19px 0;
+        padding: 8px 0;
     }
 
     .logo img {
