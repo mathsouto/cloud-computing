@@ -17,13 +17,13 @@ btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
 
 //Accordion click
-document.addEventListener('click', function(event) {
-    const accordion = event.target.closest('.accordion');
-    if (accordion) {
+const accordions = document.querySelectorAll('.accordion');
+accordions.forEach(accordion => {
+    accordion.addEventListener('click', () => {
         const body = accordion.querySelector('.accordion-body');
         body.classList.toggle('active');
-    }
-});
+    })
+})
 
 //Scroll reveal
 ScrollReveal().reveal('.titleOne, .subtitleOne, .imgTwo, .textsTwo, .leftBox, .rightBox', {

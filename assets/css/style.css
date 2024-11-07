@@ -259,7 +259,6 @@ header.sticky {
 .homeThree {
     width: 100%;
     min-height: 50dvh;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -406,7 +405,94 @@ header.sticky {
 
 /* CLOUD */
 /* Section 1 */
-.teste {
+.cloudOne {
+    width: 100%;
+    min-height: 50dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Section 2 */
+.cloudTwo {
+    width: 100%;
+    min-height: 60dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cloud-content-two {
+    width: 65%;
+    display: flex;
+}
+
+.accordion-container {
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.accordion {
+    background-color: var(--gray-light);
+    border-radius: 7px;
+    padding: 12px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: clamp(8px, 3vw, 16px);
+    cursor: pointer;
+    color: var(--white);
+}
+
+.accordion-header span {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.accordion-body {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity .3s;
+}
+
+.accordion-body p {
+    color: #C2C2C2;
+    font-size: clamp(6px, 3vw, 14px);
+    text-align: justify;
+}
+
+.accordion-body.active {
+    height: 100%;
+    opacity: 1;
+    padding: 15px 0px 5px 0px;
+}
+
+.arrow {
+    transition: transform .2s linear;
+}
+
+.accordion:has(.active) .arrow {
+    transform: rotate(180deg);
+}
+
+/* TEAM */
+/* Section 1 */
+.teamOne {
     height: 100vh;
 }
 
