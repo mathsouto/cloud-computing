@@ -306,7 +306,7 @@ header.sticky {
     text-decoration: none;
     color: white;
     font-size: clamp(7px, 5vw, 15px);
-    font-weight: 500;
+    font-weight: 400;
     transition: color ease-in-out 0.2s;
     padding: 5px 10px;
 }
@@ -400,6 +400,7 @@ header.sticky {
 .topics p {
     color: white;
     font-size: clamp(8px, 5vw, 16px);
+    font-weight: 300;
 }
 
 /* Footer */
@@ -482,10 +483,6 @@ footer p {
         transform: scaleX(1);
     }
 
-    .rightFooter a:hover {
-        color: var(--orange);
-    }
-
     .socials img:hover {
         transform: scale(1.1);
     }
@@ -507,6 +504,10 @@ footer p {
 
     .cardBox a:hover {
         color: var(--orange);
+    }
+
+    .rightFooter a:hover {
+        color: var(--green);
     }
 }
 
