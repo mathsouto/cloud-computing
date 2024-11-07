@@ -266,6 +266,7 @@ header.sticky {
     justify-content: space-between;
     position: absolute;
     top: -2vw;
+    gap: 20px;
 }
 
 .cardBox {
@@ -514,7 +515,7 @@ footer p {
 
 @media (min-width: 1921px) {
     .contentOne, .contentTwo, .contentThree, .contentFour {
-        width: 40%;
+        width: 60%;
     }
   }  
 
