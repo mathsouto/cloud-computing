@@ -481,7 +481,6 @@ footer p {
 
 /* Medias Queries */
 @media (hover:hover) and (pointer:fine) {
-
     .menu li:hover::before {
         transform: scaleX(1);
     }
@@ -590,6 +589,33 @@ screen and (max-height: 450px) {
 
 @media only screen and (max-width: 768px),
 screen and (max-height: 450px) {
+    /* Efeito "hover-mobile" */
+    .menu li:active::before {
+        transform: scaleX(1);
+    }
+
+    .socials img:active {
+        transform: scale(1.1);
+    }
+
+    .textsTwo button:active {
+        background-color: var(--orange);
+        color: var(--white);
+        transform: scale(1.02);
+    }
+
+    .cardBox:active {
+        transform: scale(1.02);
+    }
+
+    .cardBox a:active {
+        color: var(--orange);
+    }
+
+    .rightFooter a:active {
+        color: var(--orange);
+    }
+
     header {
         padding: 20px 0;
     }
