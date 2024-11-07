@@ -507,7 +507,7 @@ footer p {
     }
 
     .rightFooter a:hover {
-        color: var(--green);
+        color: var(--orange);
     }
 }
 
