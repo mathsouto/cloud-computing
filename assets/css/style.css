@@ -345,6 +345,7 @@ header.sticky {
 }
 
 .leftBox iframe {
+    border-radius: 7px;
     width: 100%;  /* O iframe ocupa 100% da largura do contêiner */
     height: 100%; /* A altura do iframe será 100% da altura do contêiner */
 }
