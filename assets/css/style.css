@@ -18,8 +18,7 @@
     font-family: "Inter", sans-serif;
 }
 
-html,
-body {
+html, body {
     scroll-behavior: smooth;
     margin: 0 auto;
     background-image: radial-gradient(circle at 99% 33%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 37%,transparent 37%, transparent 100%),radial-gradient(circle at 46% 16%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 43%,transparent 43%, transparent 100%),radial-gradient(circle at 99% 25%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 22%,transparent 22%, transparent 100%),radial-gradient(circle at 57% 88%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 86%,transparent 86%, transparent 100%),radial-gradient(circle at 82% 78%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 22%,transparent 22%, transparent 100%),linear-gradient(90deg, rgb(25,26,25),rgb(25,26,25));
@@ -35,7 +34,6 @@ header {
     padding: 15px 0;
     z-index: 10;
     transition: all ease-in-out 0.2s;
-    /* background-color: red; */
 }
 
 header.sticky {
@@ -92,7 +90,6 @@ header.sticky {
     font-weight: 300;
     font-size: clamp(9.3px, 5vw, 14px);
     transition: color ease-in-out 0.2s;
-    /* padding: 10px 20px; */
     letter-spacing: 2px;
 }
 
@@ -106,16 +103,16 @@ header.sticky {
     transition: transform ease-in-out 0.2s;
 }
 
-/* Main */
+/* HOME */
 /* Section 1 */
-.containerOne {
+.homeOne {
     width: 100%;
     min-height: 100dvh;
     display: flex;
     position: relative;
 }
 
-.contentOne {
+.home-content-one {
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -174,7 +171,7 @@ header.sticky {
 }
 
 /* Section 2 */
-.containerTwo {
+.homeTwo {
     background-image: linear-gradient(135deg, transparent 0%, transparent 24%,rgba(153, 153, 153,0.05) 24%, rgba(153, 153, 153,0.05) 25%,transparent 25%, transparent 100%),linear-gradient(0deg, transparent 0%, transparent 25%,rgba(153, 153, 153,0.05) 25%, rgba(153, 153, 153,0.05) 36%,transparent 36%, transparent 100%),linear-gradient(135deg, transparent 0%, transparent 63%,rgba(153, 153, 153,0.05) 63%, rgba(153, 153, 153,0.05) 69%,transparent 69%, transparent 100%),linear-gradient(90deg, rgb(240,230,215),rgb(240,230,215));
     width: 100%;
     min-height: 105dvh;
@@ -183,7 +180,7 @@ header.sticky {
     justify-content: center;
 }
 
-.contentTwo {
+.home-content-two {
     width: 65%;
     display: flex;
     justify-content: space-between;
@@ -250,7 +247,7 @@ header.sticky {
 }
 
 /* Section 3 */
-.containerThree {
+.homeThree {
     width: 100%;
     min-height: 50dvh;
 
@@ -260,7 +257,7 @@ header.sticky {
     position: relative;
 }
 
-.contentThree {
+.home-content-three {
     width: 65%;
     display: flex;
     justify-content: space-between;
@@ -293,7 +290,7 @@ header.sticky {
 }
 
 .cardBox p {
-    color: white;
+    color: var(--white);
     margin-top: 10px;
     font-size: clamp(6px, 5vw, 14px);
     text-align: justify;
@@ -305,7 +302,7 @@ header.sticky {
 
 .cardBox a {
     text-decoration: none;
-    color: white;
+    color: var(--white);
     font-size: clamp(7px, 5vw, 15px);
     font-weight: 400;
     transition: color ease-in-out 0.2s;
@@ -320,7 +317,7 @@ header.sticky {
 }
 
 /* Section 4 */
-.containerFour {
+.homeFour {
     width: 100%;
     min-height: 90dvh;
     display: flex;
@@ -328,7 +325,7 @@ header.sticky {
     justify-content: center;
 }
 
-.contentFour {
+.home-content-four {
     width: 65%;
     display: flex;
     justify-content: space-between;
@@ -338,10 +335,7 @@ header.sticky {
 
 .leftBox {
     width: 100%;
-    /* max-width: 600px; */
-    /* min-width: 150px; */
     height: 100%;
-    /* min-width: 336px; */
     aspect-ratio: 16 / 9; /* Proporção 16:9 */
 }
 
@@ -357,10 +351,7 @@ header.sticky {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    /* max-width: 600px; */
-    /* min-width: 150px; */
     height: 100%;
-    /* min-width: 336px; */
     aspect-ratio: 16 / 9; /* Proporção 16:9 */
 }
 
@@ -373,7 +364,7 @@ header.sticky {
 
 .rightTexts p {
     max-width: 100%;
-    color: white;
+    color: var(--white);
     margin: 5px 0 0 0;
     font-weight: 300;
     font-size: clamp(6px, 5vw, 14px);
@@ -389,7 +380,6 @@ header.sticky {
 .topics {
     background-color: var(--gray-light2);
     border-radius: 7px;
-    /* cursor: pointer; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -400,9 +390,15 @@ header.sticky {
 }
 
 .topics p {
-    color: white;
+    color: var(--white);
     font-size: clamp(8px, 5vw, 16px);
     font-weight: 300;
+}
+
+/* CLOUD */
+/* Section 1 */
+.teste {
+    height: 100vh;
 }
 
 /* Footer */
@@ -490,8 +486,7 @@ footer p {
         color: var(--white);
         transform: scale(1.02);
     }
-
-    /* TIRAR DAQUI? */
+    
     .textsTwo button:active { 
         background-color: rgb(255, 118, 33);
     }
@@ -510,14 +505,14 @@ footer p {
 }
 
 @media (min-width: 1921px) {
-    .contentOne, .contentTwo, .contentThree, .contentFour {
+    .home-content-one, .home-content-two, .home-content-three, .home-content-four {
         width: 60%;
     }
-  }  
+}  
 
 @media only screen and (max-width: 1409px),
 screen and (max-height: 450px) {
-    .contentThree {
+    .home-content-three {
         flex-direction: column;
         position: relative;
         align-items: center;
@@ -528,7 +523,7 @@ screen and (max-height: 450px) {
         margin: 20px 0;
     }
 
-    .contentFour {
+    .home-content-four {
         flex-direction: column;
         align-items: center;
         gap: 15vh;
@@ -542,7 +537,7 @@ screen and (max-height: 450px) {
 }
 
 @media only screen and (max-width: 1150px) {
-    .contentOne {
+    .home-content-one {
         width: 75%;
         align-items: center;
         margin: 0 auto;
@@ -562,7 +557,7 @@ screen and (max-height: 450px) {
         display: none;
     }
 
-    .contentTwo {
+    .home-content-two {
         width: 75%;
         flex-direction: column-reverse;
     }
@@ -571,7 +566,7 @@ screen and (max-height: 450px) {
         display: none;
     }
 
-    .contentThree {
+    .home-content-three {
         width: 75%;
     }
 
@@ -579,7 +574,7 @@ screen and (max-height: 450px) {
         width: 75%;
     }
 
-    .contentFour {
+    .home-content-four {
         width: 75%;
     }
 }
@@ -606,11 +601,11 @@ screen and (max-height: 450px) {
         display: none;
     }
 
-    .contentOne {
+    .home-content-one {
         width: 80%;
     } 
 
-    .contentTwo {
+    .home-content-two {
         width: 80%;
         padding: 0 0 15% 0;
     }
@@ -633,7 +628,7 @@ screen and (max-height: 450px) {
         margin: 20px 0 5px 0;
     }
     
-    .contentThree {
+    .home-content-three {
         width: 80%;
     }
 
@@ -646,7 +641,7 @@ screen and (max-height: 450px) {
         width: 80%;
     }
 
-    .contentFour {
+    .home-content-four {
         width: 80%;
     }
 
