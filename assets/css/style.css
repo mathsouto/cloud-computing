@@ -427,6 +427,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    gap: 20px;
 }
 
 .leftFooter a {
@@ -440,7 +441,6 @@ footer {
     max-width: 500px;
     color: var(--white);
     font-weight: 200;
-    margin-top: 20px;
     text-align: justify;
     font-size: clamp(6px, 3vw, 12px);
 }
@@ -448,19 +448,15 @@ footer {
 .rightFooter {
     display: flex;
     align-items: start;
+    gap: 20px;
 }
 
 .rightFooter a {
-    margin-right: 20px;
     color: var(--white);
     text-decoration: none;
     transition: color ease-in-out 0.2s;
     letter-spacing: 2px;
     font-size: clamp(6px, 3vw, 12px);
-}
-
-.rightFooter a:last-of-type {
-    margin-right: 0;
 }
 
 .lineFooter {
