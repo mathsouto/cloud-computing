@@ -137,7 +137,7 @@ header.sticky {
 
 .titleOne label {
     color: var(--white);
-    font-size: clamp(10px, 5vw, 24px);
+    font-size: clamp(16px, 5vw, 24px);
     font-weight: 200;
 }
 
@@ -493,7 +493,267 @@ header.sticky {
 /* TEAM */
 /* Section 1 */
 .teamOne {
-    height: 100vh;
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-content-one {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.teamTitle {
+    text-align: center;
+}
+
+.teamTitle h1 {
+    font-size: clamp(16px, 5vw, 24px);
+    font-weight: normal;
+    color: var(--orange);
+}
+
+.teamTitle p {
+    font-size: clamp(8px, 5vw, 16px);
+    font-weight: 300;
+    color: var(--white);
+}
+
+.container-team {
+    max-width: 900px;
+    width: 100%;
+    overflow: hidden;
+    padding: 80px 0;
+}
+
+.container-team .main-card {
+    display: flex;
+    justify-content: space-evenly;
+    width: 200%;
+    transition: 1s;
+}
+  
+#two:checked ~ .main-card {
+    margin-left: -100%;
+}
+
+.container-team .main-card .cards {
+    width: calc(100% / 2 - 10px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    justify-content: space-between;
+}
+
+.main-card .cards .card {
+    width: calc(100% / 3 - 10px);
+    background: var(--beige);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+}
+
+.cards .card .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cards .card .content .img {
+    height: 20vw;
+    width: 20vw;
+    max-height: 110px;
+    max-width: 110px;
+    border-radius: 50%;
+    padding: 3px;
+    background: var(--orange);
+    margin-bottom: 14px;
+}
+
+.card .content .img img {
+    height: 100%;
+    width: 100%;
+    border: 3px solid var(--beige);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.details p.name {
+    font-size: clamp(8px, 5vw, 16px);
+    font-weight: 500;
+}
+
+.details p.job {
+    font-size: clamp(6px, 5vw, 14px);
+    color: var(--orange);
+}
+
+.card .content .media-icons {
+    margin-top: 10px;
+    display: flex;
+  
+}
+
+.media-icons a {
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+    margin: 0 4px;
+    font-size: 14px;
+    color: #FFF;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background: var(--orange);
+    transition: all 0.3s ease;
+}
+
+.container-team .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.button label {
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+    background: var(--beige);
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.button label.active {
+    width: 35px;
+}
+
+#one:checked ~ .button .one {
+    width: 35px;
+    background-color: var(--green);
+}
+
+#one:checked ~ .button .two {
+    width: 15px;
+}
+
+#two:checked ~ .button .one {
+    width: 15px;
+}
+
+#two:checked ~ .button .two {
+    width: 35px;
+    background-color: var(--green);
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.lineTeam {
+    width: 65%;
+    height: 1px;
+    background-color: var(--green);
+    margin: auto;
+}
+
+.teamTwo {
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-content-two {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.formLeft {
+    width: 50%;
+}
+
+.formLeft p {
+    width: 70%;
+    color: white;
+    font-size: clamp(20px, 5vw, 30px);
+    text-align: justify;
+}
+
+.formRight {
+    width: 50%;
+}
+
+form label {
+    color: white;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+form label span {
+    color: var(--orange);
+}
+
+.form-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-first-name, .form-last-name {
+    width: 45%;
+}
+
+.form-first-name, .form-last-name, .form-email, .form-text-area {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: 1px solid var(--white);
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    padding-left: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    resize: none; 
+    padding-top: 5px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: var(--orange);
+    background-color: rgba(158, 158, 158, 0.1);
+}
+
+form button {
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 /* Footer */
@@ -538,7 +798,7 @@ footer {
 
 .rightFooter {
     display: flex;
-    align-items: start;
+    align-items: starct;
     gap: 20px;
 }
 
@@ -595,6 +855,25 @@ footer p {
 
     .rightFooter a:hover {
         color: var(--orange);
+    }
+
+    .main-card .cards .card:hover {
+        transform: translateY(-15px);
+    }
+
+    .media-icons a:hover {
+        color: var(--orange);
+        background-color: var(--beige);
+        border-color: var(--orange);
+    }    
+
+    form button:hover {
+        background-color: var(--orange);
+        color: var(--white);
+    }    
+
+    form button:active { 
+        background-color: rgb(255, 118, 33);
     }
 }
 
@@ -672,6 +951,34 @@ screen and (max-height: 450px) {
     .home-content-four {
         width: 75%;
     }
+
+    .team-content-one {
+        width: 75%;
+        padding-top: 30vh;
+    }
+
+    .main-card .cards .card{
+        margin: 20px 0 10px 0;
+        width: 100%;
+    }
+
+    .team-content-two {
+        padding: 15% 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formLeft {
+        width: 100%;
+    }
+
+    .formLeft p {
+        width: 100%;
+    }
+    
+    .formRight {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 768px),
@@ -699,9 +1006,21 @@ screen and (max-height: 450px) {
         color: var(--orange);
     }
 
+    
+    .main-card .cards .card:active {
+        transform: translateY(-15px);
+    }
+
+    .media-icons a:active {
+        color: var(--orange);
+        background-color: var(--beige);
+        border-color: var(--orange);
+    }   
+
     .rightFooter a:active {
         color: var(--orange);
     }
+    /* - */
 
     header {
         padding: 20px 0;
@@ -839,5 +1158,13 @@ screen and (max-height: 450px) {
 
     .rightFooter {
         margin: 70px 0 0 0;
+    }
+
+    .cloud-content-two, .cloud-content-one {
+        width: 80%;
+    }
+
+    input[type="text"], input[type="email"], textarea, form button {
+        height: 30px;
     }
 }
