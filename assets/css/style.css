@@ -513,7 +513,7 @@ header.sticky {
 }
 
 .teamTitle h1 {
-    font-size: clamp(16px, 5vw, 24px);
+    font-size: clamp(20px, 5vw, 24px);
     font-weight: normal;
     color: var(--orange);
 }
@@ -703,6 +703,7 @@ form label {
     color: white;
     font-weight: 300;
     margin-bottom: 5px;
+    font-size: clamp(6px, 3vw, 14px);
 }
 
 form label span {
