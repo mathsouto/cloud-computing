@@ -519,6 +519,7 @@ header.sticky {
 }
 
 .teamTitle p {
+    margin-top: 20px;
     font-size: clamp(8px, 5vw, 16px);
     font-weight: 300;
     color: var(--white);
