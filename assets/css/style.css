@@ -607,9 +607,6 @@ footer p {
 @media only screen and (max-width: 1409px),
 screen and (max-height: 450px) {
     .home-content-three {
-        flex-direction: column;
-        position: relative;
-        align-items: center;
         transform: translate(0, -7%);
     }
 
@@ -662,6 +659,10 @@ screen and (max-height: 450px) {
 
     .home-content-three {
         width: 75%;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        transform: translate(0, -7%);
     }
 
     .line {

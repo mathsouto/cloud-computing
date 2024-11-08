@@ -26,13 +26,16 @@ accordions.forEach(accordion => {
 })
 
 //Scroll reveal
-ScrollReveal().reveal('.titleOne, .subtitleOne, .imgTwo, .textsTwo, .leftBox, .rightBox', {
+ScrollReveal().reveal('.titleOne, .subtitleOne, .imgTwo, .textsTwo, .leftBox, .rightBox, .accordion-container', {
     duration: 2000,
     distance: '12.6%'
 });
 ScrollReveal().reveal('.titleOne, .imgTwo, .leftBox', {
     origin: 'left'
 });
-ScrollReveal().reveal('.subtitleOne, .textsTwo, .rightBox', {
+ScrollReveal().reveal('.subtitleOne, .textsTwo, .rightBox, ', {
     origin: 'right'
+});
+ScrollReveal().reveal('.accordion-container', {
+    origin: 'top'
 });
